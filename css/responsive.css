@@ -1,0 +1,60 @@
+/* desktop > 768px *---------------------------------------------------------*/
+@media screen and (min-width: 769px){
+    
+}
+
+/* teblet: <768px ------------------------------------------------------------*/
+@media screen and ( min-width: 768px ){
+    /* tipography */
+    .card h2{
+        margin-bottom: 2rem;
+    }
+    .card p{
+        line-height: 2.5rem;
+    }
+    
+    /* header */
+    .col-burger{
+        display: none;
+    }
+
+    /* jumbotron */
+    .jumbo .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .container .card{
+        margin-bottom:0;
+        width: calc(100% / 3 - 1.5rem)
+    }
+
+    .large{
+        min-width: 66%;
+    }
+
+    .card div{
+        text-align: left;
+    }
+
+    .card img{
+        left: -10px;
+    }
+
+    .card a.btn span{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .hidden-links {
+        display: none;
+    }
+}
+/* mobile: < 480px ------------------------------------------------------------*/
+@media screen and (max-width: 480px){
+    .hidden-links {
+        display: none;
+    }
+}

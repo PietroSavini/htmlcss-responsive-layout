@@ -15,6 +15,41 @@ img{
     /* debug */
     --border:1px solid black;
     /* colors */
+    --header-blue:#0084FD;
+    --card-blue:#B5DDFF;
+    --section-background-violet:#9792E4;
+    --cta-title:#FDC15F;
+    --footer-grey:#333333;
+}
+
+section{
+    padding: 1.5rem 1rem;
+    width: 100%;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.btn span{
+    display: inline-block;
+    background-color: #fff;
+    color: black;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 /* flex proprieties */
@@ -23,6 +58,7 @@ img{
 }
 
 .fd-col{
+    display: flex;
     flex-direction: column;
 }
 
@@ -34,3 +70,82 @@ img{
 .pd-1{
     padding: 1rem 1rem;
 }
+
+/* typography */
+.card h2{
+    margin-bottom: 1rem;
+    color: var(--header-blue);
+    text-align: center;
+}
+
+.card p{
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+i{
+    margin-right: 10px;
+}
+
+/* fixed header section------------------------------------------------ */
+
+.fixed-header{
+    position: fixed;
+    z-index: 100;
+    background-color: var(--header-blue);
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+.hidden-links li{
+    font-size: 1rem;
+}
+
+/* main ------------------------------------------------------------------- */
+/* jumbo with 5 cards */
+
+.jumbo{
+    padding-top: calc(1.5rem + 100px);
+}
+
+.container .card{
+    background-color: var(--card-blue);
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.card div{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.card a.btn span{
+    background-color: var(--header-blue);
+    color: #fff;
+    min-width: 25%;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.card img{
+    position: relative;
+    bottom: -20px;
+    max-height: 400px;
+
+}
+
+.little{
+    text-align: center;
+}
+
+.little > i{
+    font-size: 6rem;
+    color: var(--header-blue);
+    margin-bottom: 1.5rem;
+}
+
