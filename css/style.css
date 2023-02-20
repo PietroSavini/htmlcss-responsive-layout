@@ -1,0 +1,36 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* common ---------------------------------------------------------*/
+
+:root{
+    /* debug */
+    --border:1px solid black;
+    /* colors */
+}
+
+/* flex proprieties */
+.sb{
+    justify-content: space-between;
+}
+
+.fd-col{
+    flex-direction: column;
+}
+
+/* margin and padding */
+.mb-1{
+    margin-bottom: 1.5rem;
+}
+
+.pd-1{
+    padding: 1rem 1rem;
+}
