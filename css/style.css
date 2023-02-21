@@ -122,7 +122,7 @@ p{
 }
 
 /* main ------------------------------------------------------------------- */
-/* jumbo with 5 cards */
+/* jumbo with 5 cards --------------------------------------------------------*/
 
 .jumbo{
     padding-top: calc(1.5rem + 100px);
@@ -165,7 +165,7 @@ p{
     margin-bottom: 1.5rem;
 }
 
-/* Strategic planning */
+/* Strategic planning -----------------------------------------------------------*/
 
 .col-strategic>img{
     margin: 2rem ;
@@ -215,7 +215,7 @@ div.strategic p{
     width: 50px;
 }
 
-/* testimonials */
+/* testimonials----------------------------------------------------------- */
 
 .testimonials p,
 h2 {
@@ -241,7 +241,6 @@ h2 {
 }
 
 .card .flex-container{
-    display: flex;
     align-items: center;
     padding: 0 1rem;
 }
@@ -253,3 +252,37 @@ h2 {
 .flex-container .text-container i{
     margin: 0 0.5rem;
 }
+
+/* working with us section --------------------------------------------------------*/
+.working-with{
+    color: #fff;
+}
+.working-with h2{
+    margin: 2.5rem 0;
+}
+.row-flex .card{
+    background-color: #fff;
+    padding: 2.5rem 1.5rem;
+    color: var(--section-background-violet);
+}
+
+.row-flex .card p{
+    text-align: left;
+}
+
+.row-flex .card h3{
+    text-align: left;
+}
+
+.row-flex .card p:first-child{
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.row-flex .card p:last-of-type{
+    color: black;
+}
+
+.row-flex .card .bt-violet>span{
+    background-color: var(--section-background-violet);
+} 

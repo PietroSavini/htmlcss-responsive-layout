@@ -3,34 +3,7 @@
 
 }
 
-/* desktop > 992px *---------------------------------------------------------*/
-@media screen and (min-width: 992px) {
-    .wrapper{
-        width: 60%;
-    }
-    /* tipography */
-    p{
-        line-height: 1rem;
-    }
-
-    h2{
-        font-size: 2rem;
-    }
-    /* strategic */
-    .planning .container{
-        flex-direction: row;
-        gap: 1.5rem;
-    }
-
-    div.col-strategic .card{
-        position: relative;
-        top:70px;
-
-    }
-
-}
-
-/* teblet: 768px ------------------------------------------------------------*/
+/* tablet: 768px ------------------------------------------------------------*/
 @media screen and ( min-width: 769px ){
     /* tipography */
     .card h2{
@@ -89,7 +62,52 @@
         margin-left: 1rem;
         margin-bottom: 3rem;
     }
+
+    /* Working with us */
+    .row-flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+    .row-flex .card{
+        width: calc(100% / 2 - 1.5rem);
+    }
 }
+/* desktop > 992px *---------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+    .wrapper{
+        width: 60%;
+    }
+    /* tipography */
+    p{
+        line-height: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    /* strategic */
+    .planning .container{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    div.col-strategic .card{
+        position: relative;
+        top:70px;
+
+    }
+
+    /* working with us */
+    
+    .row-flex .card{
+        width: calc(100% / 3 - 1.5rem);
+    }
+}
+
+
+
+
 
 @media screen and (max-width:768px){
     .hidden-links {
