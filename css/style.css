@@ -64,6 +64,11 @@ a{
     color: inherit;
 }
 
+
+a.normal{
+    text-decoration: underline;
+}
+
 /* flex proprieties */
 .sb{
     justify-content: space-between;
@@ -84,6 +89,9 @@ a{
 }
 
 /* typography */
+h1{
+    color: var(--cta-title);
+}
 h2{
     font-size: 3.5rem;
 }
@@ -106,7 +114,6 @@ p{
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
-
 
 /* fixed header section------------------------------------------------ */
 
@@ -343,4 +350,44 @@ div.col-30 .bt-violet>span i{
 
 .col-30 h3{
     margin-bottom: 1.5rem;
+}
+
+/* CTA---------------------------------------------------- */
+
+.cta{
+    color: #fff;
+}
+.row-text p,
+h1 {
+    text-align: center;
+    margin: 2rem;
+}
+
+.row-text .btn>span{
+    color: var(--section-background-violet);
+    padding: 2rem 4rem;
+    border-radius: 50px;
+}
+
+.row-text p:first-child{
+    color:#D4D3F3 ;
+}
+
+.row-text div{
+    text-align: center;
+}
+
+/* footer-------------------------------------------------------------------- */
+footer{
+    background-color: var(--footer-grey);
+    padding: 3rem;
+    color: #fff;
+}
+
+footer a{
+    color: var(--section-background-violet);
+}
+
+footer .wrapper>p{
+    text-align: center;
 }
