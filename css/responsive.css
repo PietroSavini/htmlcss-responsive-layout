@@ -1,18 +1,45 @@
-/* desktop > 768px *---------------------------------------------------------*/
-@media screen and (min-width: 769px){
-    
+/* large desktop > 1200px */
+@media screen and (min-width:1200px){
+
+}
+
+/* desktop > 992px *---------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+    .wrapper{
+        width: 60%;
+    }
+    /* tipography */
+    p{
+        line-height: 1rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+    /* strategic */
+    .planning .container{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    div.col-strategic .card{
+        position: relative;
+        top:70px;
+
+    }
+
 }
 
 /* teblet: <768px ------------------------------------------------------------*/
-@media screen and ( min-width: 768px ){
+@media screen and ( min-width: 769px ){
     /* tipography */
     .card h2{
         margin-bottom: 2rem;
     }
     .card p{
-        line-height: 2.5rem;
+        line-height: 1rem;
     }
-    
+
     /* header */
     .col-burger{
         display: none;
@@ -31,7 +58,7 @@
     }
 
     .large{
-        min-width: 66%;
+        min-width: calc(66% - 1.1rem);
     }
 
     .card div{
@@ -45,6 +72,9 @@
     .card a.btn span{
         width: 40%;
     }
+
+    /* strategic */
+    
 }
 
 @media screen and (max-width:768px){

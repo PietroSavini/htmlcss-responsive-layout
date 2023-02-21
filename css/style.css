@@ -27,10 +27,19 @@ section{
     width: 100%;
 }
 
+section:nth-of-type(even){
+    background-color: var(--section-background-violet);
+}
+
 .wrapper{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;;
+}
+
+.card{
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
 }
 
 ul li{
@@ -72,20 +81,27 @@ a{
 }
 
 /* typography */
-.card h2{
+h2{
+    font-size: 3.5rem;
+}
+
+.col-strategic h2{
+    margin-bottom: 2rem;
+}
+.card h3{
+    font-size: 1.3rem;
+    text-align: center;
     margin-bottom: 1rem;
-    color: var(--header-blue);
+}
+div.card p{
     text-align: center;
 }
 
-.card p{
+p{
     line-height: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
-i{
-    margin-right: 10px;
-}
 
 /* fixed header section------------------------------------------------ */
 
@@ -114,8 +130,6 @@ i{
 
 .container .card{
     background-color: var(--card-blue);
-    border-radius: 20px;
-    margin-bottom: 1.5rem;
 }
 
 .card div{
@@ -129,14 +143,16 @@ i{
     min-width: 25%;
     display: inline-block;
     text-align: center;
-    
 }
 
 .card img{
     position: relative;
     bottom: -20px;
-    max-height: 400px;
+    max-height: 250px;
+}
 
+.jumbo .card h3{
+    color: var(--header-blue);
 }
 
 .little{
@@ -149,3 +165,52 @@ i{
     margin-bottom: 1.5rem;
 }
 
+/* Strategic planning */
+
+.col-strategic>img{
+    margin: 2rem ;
+    max-width: 80%;
+}
+
+.col-strategic{
+    color: #fff;
+    text-align: center;
+}
+
+.col-strategic h2,
+p{
+    text-align: left;
+}
+
+.col-strategic .card{
+    background-color: #fff;
+    color: black;
+}
+
+div.strategic{
+    min-width: 100%;
+}
+
+div.strategic p{
+    font-style: italic;
+}
+
+.col-strategic>img{
+   margin: 1.5rem 0;
+   max-height: 250px;
+}
+
+.col-strategic .card>img{
+    margin-bottom: 1.5rem;
+    max-height: 160px;
+}
+
+#btn-small span{
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    background-color: var(--section-background-violet);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
