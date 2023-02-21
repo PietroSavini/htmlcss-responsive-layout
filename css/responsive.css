@@ -30,7 +30,7 @@
 
 }
 
-/* teblet: <768px ------------------------------------------------------------*/
+/* teblet: 768px ------------------------------------------------------------*/
 @media screen and ( min-width: 769px ){
     /* tipography */
     .card h2{
@@ -73,8 +73,22 @@
         width: 40%;
     }
 
-    /* strategic */
+    /* testiomonials */
+    .card .flex-container{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
     
+    .flex-container .text-container p {
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .testimonials .card img{
+        margin-left: 1rem;
+        margin-bottom: 3rem;
+    }
 }
 
 @media screen and (max-width:768px){

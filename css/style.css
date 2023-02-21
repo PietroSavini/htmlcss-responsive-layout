@@ -214,3 +214,42 @@ div.strategic p{
     height: 50px;
     width: 50px;
 }
+
+/* testimonials */
+
+.testimonials p,
+h2 {
+   text-align: center; 
+}
+.testimonials h2{
+    color: var(--section-background-violet);
+    margin-bottom: 1rem;
+}
+
+.testimonials .card{
+    background-color: var(--section-background-violet);
+}
+.testimonials .card{
+    color: #fff;
+}
+.testimonials .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+
+.card .flex-container{
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.card .name{
+    text-transform: uppercase;
+}
+
+.flex-container .text-container i{
+    margin: 0 0.5rem;
+}
