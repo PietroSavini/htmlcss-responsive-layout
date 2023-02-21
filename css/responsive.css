@@ -1,10 +1,10 @@
-/* large desktop > 1200px */
+/* large desktop > 1200px ---------------------------------------------------*/
 @media screen and (min-width:1200px){
 
 }
 
 /* tablet: 768px ------------------------------------------------------------*/
-@media screen and ( min-width: 769px ){
+@media screen and ( min-width: 768px ){
     /* tipography */
     .card h2{
         margin-bottom: 2rem;
@@ -69,8 +69,23 @@
         flex-wrap: wrap;
         gap: 1.5rem;
     }
+
     .row-flex .card{
         width: calc(100% / 2 - 1.5rem);
+    }
+
+    /* About us */
+    .about-us div.flex-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .col-70{
+        width: 50%;
+    }
+    
+    .col-30{
+        width: 30%;
     }
 }
 /* desktop > 992px *---------------------------------------------------------*/
@@ -78,6 +93,7 @@
     .wrapper{
         width: 60%;
     }
+
     /* tipography */
     p{
         line-height: 1rem;
@@ -86,6 +102,7 @@
     h2{
         font-size: 2rem;
     }
+
     /* strategic */
     .planning .container{
         flex-direction: row;
@@ -95,19 +112,13 @@
     div.col-strategic .card{
         position: relative;
         top:70px;
-
     }
 
     /* working with us */
-    
     .row-flex .card{
         width: calc(100% / 3 - 1.5rem);
     }
 }
-
-
-
-
 
 @media screen and (max-width:768px){
     .hidden-links {
