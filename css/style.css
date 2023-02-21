@@ -140,6 +140,10 @@ p{
     padding-top: calc(1.5rem + 100px);
 }
 
+div.large{
+    padding-bottom:0;
+}
+
 .container .card{
     background-color: var(--card-blue);
 }
@@ -148,18 +152,27 @@ p{
     text-align: center;
     padding-top: 2rem;
 }
+.large div:last-child{
+    display: flex;
+    align-items: flex-end;
+}
+.large div:last-child img{
+    display: block;
+}
 
-.card a.btn span{
+div.container div.large div:first-child h3 + p {
+    text-align: left;
+}
+
+.card a.btn>span{
     background-color: var(--header-blue);
     color: #fff;
-    min-width: 25%;
+    width: 100px;
     display: inline-block;
     text-align: center;
 }
 
 .card img{
-    position: relative;
-    bottom: -20px;
     max-height: 250px;
 }
 
@@ -251,7 +264,7 @@ h2 {
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    margin-bottom: 2rem;
+    margin:2rem 1rem;
 }
 
 .card .flex-container{

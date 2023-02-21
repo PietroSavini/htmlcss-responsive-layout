@@ -44,7 +44,7 @@
     }
 
     .card a.btn span{
-        width: 40%;
+        min-width: 150px;
     }
 
     /* testiomonials */
@@ -57,11 +57,6 @@
     .flex-container .text-container p {
         text-align: left;
         margin-left: 1rem;
-    }
-
-    .testimonials .card img{
-        margin-left: 1rem;
-        margin-bottom: 3rem;
     }
 
     /* Working with us */
@@ -111,6 +106,21 @@
      .col-burger{
         display: none;
     }
+
+    /* img jumbotron */
+    div.large{
+        flex-direction: row;
+    }
+
+    div.large div:first-child{
+        max-width: 60%;
+        
+    }
+
+    div.large div:last-child{
+        
+    }
+
     /* strategic */
     .planning .container{
         flex-direction: row;
@@ -141,4 +151,16 @@
     h1{
         font-size: 4rem;
     }
+
+    .card a.btn span{
+        min-width: 150px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .large div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+        
 }
